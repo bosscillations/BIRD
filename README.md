@@ -13,5 +13,12 @@ Simply download a copy of the BIRD.m and nt_detrend.m files, and add them to you
 
 ## Getting Started
 
-An example script and dataset is provided to outline the steps for running BIRD. The current version of BIRD is designed for ERP analyses. It thus assumes that a file has been loaded into EEGLAB, that an EVENTLIST has been created, and that bins have been assigned with a BDF file. It uses a VEOG channel to detect blinks, and so a VEOG channel must be specified.
-1. Do stuff
+An example script and dataset is provided to outline the steps for running BIRD. The current version of BIRD is designed for ERP analyses. It thus assumes that a file has been loaded into EEGLAB, that an EVENTLIST has been created, and that bins have been assigned with a BDF file. It uses a VEOG channel to detect blinks, and so a VEOG channel must be specified. The general steps are as follows:
+
+1. Load in data into EEGLAB
+2. Perform chosen pre-processing steps (low-pass filtering, re-referencing)
+3. Create VEOG channel (lower eye channel - upper eye channel) if one hasn't been created
+4. Create EVENTLIST for ERPLAB
+5. Assign bins with BDF file
+6. Create opts structure specifying BIRD options
+7. Run BIRD on EEG data
