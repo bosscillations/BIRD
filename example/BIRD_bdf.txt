@@ -1,0 +1,7 @@
+bin 1
+SCEM Correct
+.{201}{1-24}{152;153}
+
+bin 2
+SCUM Correct
+.{203}{1-24}{160;161}
